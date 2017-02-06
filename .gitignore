@@ -1,0 +1,46 @@
+# User specific & automatically generated files #
+#################################################
+
+/app/Config/core.php
+/app/Config/database.php
+/app/Config/email.php
+/vendors/*
+
+/.idea/*
+/instalacion_pantallas/*
+
+# Remueve todo de la carpeta tmp excepto tmp/logs, tmp/cache/models y tmp/cache/persistent #
+############################################################################################
+
+/app/tmp/*
+!/app/tmp/logs
+/app/tmp/logs/*
+!/app/tmp/logs/empty
+!/app/tmp/cache
+/app/tmp/cache/*
+!/app/tmp/cache/models
+!/app/tmp/cache/persistent
+/app/tmp/cache/models/*
+/app/tmp/cache/persistent/*
+!/app/tmp/cache/models/empty
+!/app/tmp/cache/persistent/empty
+
+# /app/Config/database.php
+# /app/tmp/
+# /lib/Cake/Console/Templates/skel/tmp/
+# /plugins
+# /vendors
+# /build
+# /dist
+# /tags
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

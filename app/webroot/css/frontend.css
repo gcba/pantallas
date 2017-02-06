@@ -1,0 +1,444 @@
+
+/* Fuentes
+ *
+ */
+
+ 	/* Montserrat
+ 	 *
+ 	 */
+		@font-face {
+			src: url('fonts/Montserrat-Bold.eot');
+			src: url('fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/Montserrat-Bold.woff') format('woff'),
+				 url('fonts/Montserrat-Bold.ttf') format('truetype');
+
+			font-family: 'Montserrat';
+			font-weight: 700;
+			font-style: normal;
+		}
+		@font-face {
+			src: url('fonts/Montserrat-Regular.eot');
+			src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/Montserrat-Regular.woff') format('woff'),
+				 url('fonts/Montserrat-Regular.ttf') format('truetype');
+
+			font-family: 'Montserrat';
+			font-weight: 400;
+			font-style: normal;
+		}
+
+ 	/* Gotham
+ 	 *
+ 	 */
+		@font-face {
+			src: url('fonts/gotham-medium.eot');
+			src: url('fonts/gotham-medium.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/gotham-medium.woff') format('woff'),
+				 url('fonts/gotham-medium.ttf') format('truetype');
+
+			font-family: 'Gotham';
+			font-weight: normal;
+			font-style: normal;
+		}
+
+ 	/* Ubuntu
+ 	 *
+ 	 */
+		@font-face { 
+			src: url('fonts/Ubuntu-Bold.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 700;
+			font-style: normal;
+		}
+		@font-face { 
+			src: url('fonts/Ubuntu-BoldItalic.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 700;
+			font-style: italic;
+		}
+		@font-face { 
+			src: url('fonts/Ubuntu-Italic.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 400;
+			font-style: italic;
+		}
+		@font-face { 
+			src: url('fonts/Ubuntu-Light.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 200;
+			font-style: normal;
+		}
+		@font-face { 
+			src: url('fonts/Ubuntu-LightItalic.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 200;
+			font-style: italic;
+		}
+		@font-face { 
+			src: url('fonts/Ubuntu-Medium.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 500;
+			font-style: normal;
+		}
+		@font-face { 
+			src: url('fonts/Ubuntu-MediumItalic.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 500;
+			font-style: italic;
+		}
+		@font-face { 
+			src: url('fonts/Ubuntu-Regular.ttf');
+			font-family: 'Ubuntu';
+			font-weight: 400;
+			font-style: normal;
+		}
+
+ 	/* Univers
+ 	 *
+ 	 */
+		@font-face {
+			src: url('fonts/UniversLightCond.ttf');
+			font-family: 'UniversLightCond';
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face { 
+			src: url('fonts/UniversThinCond.otf');
+			font-family: 'UniversThinCond';
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face { 
+			src: url('fonts/UniversCondensed.ttf');
+			font-family: 'UniversCondensed';
+			font-weight: normal;
+			font-style: normal;
+		}
+
+
+/* Generales
+ *
+ */
+	* {
+		border: 0;
+		cursor: none;
+		text-decoration: none;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	html,
+	body {
+		width: 100%;
+		height: 100%;
+
+		font-family: 'Montserrat', 'OpenSans', 'OpenSansBold', 'Helvetica', 'Arial';
+		font-weight: normal;
+		font-style: normal;
+
+		background-color: #000;
+		overflow: hidden;
+	}
+	.display-table {
+		position: relative;
+		float: left;
+
+		display: table;
+		
+		height: 100%;
+		width: 100%;
+	}
+	.display-table-row {
+		float: none;
+		display: table-row;
+		
+		width: 100%;
+	}
+	.display-table-cell {
+		float: none;
+		display: table-cell;
+		
+		height: 100%;
+		
+		vertical-align: middle;
+	}
+
+	/* Snippets
+	 *
+	 */
+		/* Marquee
+		 *
+		 */
+			.marquee {
+				position: relative;
+				float: left;
+
+				width: 100%;
+				height: 100%;
+
+				overflow: hidden;
+			}
+			.marquee span {
+				opacity: 0;
+				display: inline-block;
+
+				position: absolute;
+				
+				min-width: 100%;
+
+				text-align: center;
+				white-space: nowrap;
+			}
+			.marquee span.animation-marquee {
+				animation-duration: 15s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+			}
+			.marquee span.animation-marquee.animate {
+				animation-name: animation-marquee;
+				opacity: 1;
+			}
+			@keyframes animation-marquee {
+				0%   { transform: translate(100%, 0); }
+				100% { transform: translate(-100%, 0); }
+			}
+
+
+/* Preloader
+ *
+ */
+	#preloader {
+		position: relative;
+		z-index: 2000;
+
+		width: 100%;
+		height: 100%;
+
+		background: #FFF;
+	}
+	#preloader .logo {
+		position: relative;
+
+		width: 50em;
+
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+
+
+/* Footer
+ *
+ */
+	#footer {
+		z-index: 5000;
+		display: none;
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+
+		width: 100%;
+
+		background-color: #000;
+	}
+
+	#footer, 
+ 	#footer .container-fluid {
+		height: 14vw;
+ 	}
+ 	#footer[style*='display: block'] ~ #main-content .content-container,
+ 	#footer[style*='display: block'] ~ #offline {
+ 		padding-bottom: 14vw;
+ 	}
+
+ 	#footer .container-fluid {
+ 		position: absolute;
+ 		top: 0;
+ 		left: 0;
+
+		width: 100%;
+		height: 14vw;
+ 	}
+ 	#footer .footer-wrapper {
+ 		position: relative;
+ 		float: left;
+
+		width: 100%;
+		height: 100%;
+
+		padding-top: 7px;
+ 	}
+	#footer .footer-wrapper .logo-wrapper,
+	#footer .footer-wrapper .date-time-wrapper {
+		height: 100%;
+		padding: 0;
+	}
+
+	/* Timer */
+		#footer .timer-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 7px;
+		}
+		#footer #timer {
+			display: none;
+			
+			position: relative;
+			float: left;
+
+			width: 100%;
+			height: 100%;
+
+			background-color: #fcda59;
+
+			/*border: 1px solid white;
+			border-width: 1px 0 0 0;*/
+
+			/*-webkit-transition: width 1s linear; 
+					transition: width 1s linear; */
+
+			/*-webkit-box-shadow: 0px -2px 1px 0px rgba(0,0,0,0.5);
+			   -moz-box-shadow: 0px -2px 1px 0px rgba(0,0,0,0.5);
+					box-shadow: 0px -2px 1px 0px rgba(0,0,0,0.5);*/
+		}
+
+	/* Logo */
+		#footer .logo-wrapper .logo {
+			width: 100%;
+		}
+
+	/* Fecha y hora */
+		#footer .date-time {
+			font-size: 3vw;
+			color: #FFF;
+		}
+		#footer .date-time .date-wrapper,
+		#footer .date-time .time-wrapper {
+			position: relative;
+			float: left;
+
+			width: 100%;
+		}
+		#footer .date-time .date,
+		#footer .date-time .time {
+			position: relative;
+			float: right;
+		}
+		#footer .date-time .time {
+			padding-right: 4vw;
+		}
+		#footer .date-time .time .glyphicon {
+			position: absolute;
+
+			top: 0.5vw;
+			right: 0;
+		}
+
+
+/* Main content
+ *
+ */
+ 	#main-content {
+ 		z-index: 1;
+
+ 		position: relative;
+ 		float: left;
+
+ 		width: 100%;
+ 		height: 100%;
+ 	}
+	#main-content .content-container,
+	#main-content .content-container .wrapper {
+ 		position: relative;
+ 		float: left;
+
+		width: 100%;
+		height: 100%;
+	}
+
+
+/* Offline
+ *
+ */
+ 	#offline {
+ 		display: none;
+ 		z-index: 2500;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: #FFF;
+ 	}
+
+ 	/* Contenido */
+	 	#offline .contenido .error-img {
+			padding: 50px 0;
+	 	}
+	 	#offline .contenido .titulo {
+			font-size: 5vw;
+	 	}
+	 	#offline .contenido .descripcion {
+			margin-top: 20px;
+
+			font-size: 3vw;
+			line-height: 3vw;
+	 	}
+
+
+ 	/* Shortcuts */
+		#offline .shortcuts {
+			padding: 96px 0;
+		}
+		#offline .shortcuts .shortcut h3 {
+			margin-bottom: 24px;
+			
+			color: #333;
+			font-size: 48px;
+		}
+		#offline .shortcuts .shortcut span {
+			display: inline;
+
+			position: relative;
+			top: -4px;
+			
+			width: inherit;
+			height: inherit;
+
+			margin: 0;
+			margin: 10px;
+
+			border-radius: 0;
+
+			color: #aaa;
+			font-size: 24px;
+			text-align: left;
+		}
+		#offline .shortcuts .shortcut .glyphicon,
+		#offline .shortcuts .shortcut p {
+			color: #333;
+		}
+
+
+/* Overlay
+ *
+ */
+	#touch-overlay {
+		z-index: 10000;
+		display: block;
+		/*display: none !important;*/
+		
+		position: absolute;
+		top: 0px;
+		left: 0px;
+
+		width: 100%;
+		height: 100%;
+	}

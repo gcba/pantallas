@@ -1,0 +1,21 @@
+/* BASES */
+	#main-content.VERTICAL .content-type-Test {}
+	#main-content.HORIZONTAL .content-type-Test {}
+
+
+	/* ESTILOS GENERALES */
+		#main-content .content-type-Test {
+			background-color: #FFF;
+		}
+
+
+	/* ESTILOS VERTICALES */
+		#main-content.VERTICAL .content-type-Test .wrapper {
+
+		}
+
+
+	/* ESTILOS HORIZONTALES */
+		#main-content.HORIZONTAL .content-type-Test .wrapper {
+			
+		}

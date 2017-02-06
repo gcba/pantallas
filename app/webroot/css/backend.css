@@ -1,0 +1,417 @@
+/*
+ * Generales
+ */
+	html, body {
+		height: auto;
+	}
+	html {
+		background: #333;
+	}
+	body {
+		background: #FFF;
+	}
+	a,
+	.bin-link,
+	a:visited,
+	.btn-link:visited {
+		color: #19c3e3;
+	}
+
+	/*
+	 * Core
+	 */
+		#url-rewriting-warning {
+			display: none;
+		}
+		.bump {
+			height: 400px;
+		}
+		.separador {
+			width: 100%;
+			height: 1px;
+
+			margin: 40px 0;
+
+			background-color: #BDBDBD;
+		}
+
+	/*
+	 * Tablas
+	 */
+		.table-striped > tbody > tr {
+			background-color: #EFEFEF;
+		}
+		.table-striped > tbody > tr:nth-of-type(odd) {
+			background-color: #FFF;
+		}
+
+	/*
+	 * Formularios
+	 */
+		form.form .form-group {
+			margin-left: 0px !important;
+			margin-right: 0px !important;
+		}
+
+		form.form .form-group[class="col-*"] {
+			padding: 0;
+		}
+		form.form .form-group textarea {
+			resize: none;
+		}
+		form.form .checkbox {
+			padding-bottom: 15px;
+		}
+		form.form button[type="submit"] {
+			min-width: 100px;
+		}
+		form .chosen-container.chosen-container-multi .chosen-choices {
+			height: auto;
+		}
+
+
+/*
+ * Header
+ */
+	header.navbar.navbar-primary {
+		z-index: 9999;
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+	}
+	header.navbar.navbar-primary .navbar-brand.bac-header {
+		margin-left: 0;
+	}
+	header.navbar.navbar-primary #login,
+	header.navbar.navbar-primary #logout {
+		margin-top: 21px;
+
+		color: black;
+		text-decoration: underline;
+	}
+	header.navbar.navbar-primary #login:hover,
+	header.navbar.navbar-primary #logout:hover {
+		color: #19c3e3;
+	}
+
+
+/*
+ * Navbar
+ */
+	nav.navbar.navbar-default {
+		z-index: 9999;
+		position: fixed;
+		top: 63px;
+		left: 0;
+
+		width: 100%;
+	}
+	nav.navbar.navbar-default {
+		background-color: #FAFAFA;
+	}
+	nav.navbar.navbar-default .navbar-collapse ul li:hover a {
+		background-color: #efefef;
+		color: #666;
+	}
+	nav.navbar.navbar-default .navbar-collapse ul li.selected a {
+		background-color: #e5e5e5;
+		color: #666;
+	}
+	nav.navbar.navbar-default .navbar-collapse {
+		/*background-color: #FFF;*/
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+
+/*
+ * Breadcrumb
+ */
+	#breadcrumb {
+		position: relative;
+		float: left;
+
+		margin-top: 30px;	
+	}
+	#breadcrumb .item {
+		padding-right: 5px;
+		 
+		font-size: 15px;
+		text-decoration: none;
+	}
+	#breadcrumb .item:hover {
+		text-decoration: underline;
+	}
+	#breadcrumb .item:not(:first-child) {
+		padding-left: 5px; 
+	}
+
+
+/*
+ * Main content
+ */
+ 	#content {
+		padding-top: 63px;
+		padding-bottom: 48px;
+	}
+	nav.navbar.navbar-default + #content {
+		padding-top: 111px;
+	}
+
+	/*
+	 * Flash alerts
+	 */
+		.flash.alert {
+			margin-top: 24px;
+			margin-bottom: 0;
+		}
+
+
+/*
+ * General
+ */
+	.page-container .panel {
+		float: left;
+		width: 100%;
+
+		margin-bottom: 0;
+	}
+	.page-container .panel,
+	.page-container .panel-heading,
+	.page-container .panel-body {
+		padding: 0;
+	}
+	.page-container .panel,
+	.page-container .panel-heading {
+		background-color: transparent;
+		border: 0;
+		box-shadow: none;
+	}
+	.page-container .panel-heading > h1 {
+		margin: 20px 0;
+		font-size: 48px; 
+	}
+	.page-container .panel-heading > h3 {
+		margin: 20px 0;
+		font-size: 36px; 
+	}
+ 	.page-container .panel-heading a.btn-success,
+ 	.page-container .panel-heading a.btn-success:visited,
+ 	.page-container .panel-heading a.btn-info,
+ 	.page-container .panel-heading a.btn-info:visited,
+ 	.page-container .panel-heading a.btn-warning,
+ 	.page-container .panel-heading a.btn-warning:visited,
+ 	.page-container .panel-heading a.btn-danger,
+ 	.page-container .panel-heading a.btn-danger:visited,
+ 	.page-container .panel-heading a.btn-inverse,
+ 	.page-container .panel-heading a.btn-inverse:visited,
+ 	.page-container .panel-heading a.btn-blue,
+ 	.page-container .panel-heading a.btn-blue:visited,
+ 	.page-container .panel-heading a.btn-violet,
+ 	.page-container .panel-heading a.btn-violet:visited,
+ 	.page-container .panel-heading a.btn-pink,
+ 	.page-container .panel-heading a.btn-pink:visited {
+		color: #FFF;
+ 	}
+
+	.page-container .panel-body .table th,
+	.page-container .panel-body .table th a {
+		color: black;
+	}
+	.page-container .panel-body .table th,
+	.page-container .panel-body .table td {
+		text-align: center;
+	}
+	.page-container .panel-body .table .id {
+		width: 50px;
+	}
+	.page-container .panel-body .table .actions {
+		min-width: 150px;
+		width: 150px;
+		max-width: 150px;
+	}
+	.page-container .panel-body .table .actions .glyphicon {
+		padding: 3px 1px;
+		top: 0px;
+	}
+
+	.page-container .panel-body .pagination {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+ 	.page-container .panel-body .pager {
+ 		margin-top: 40px;
+ 		margin-bottom: 0;
+ 	}
+
+	/*
+	 * [controller]/[action]
+	 */
+		.page-container .panel-body .main-actions {
+			margin-bottom: 15px;
+		}
+		.page-container .panel-body .main-actions .btn {
+			margin-right: 5px;
+		}
+
+	/*
+	 * [controller]/index
+	 */
+	 
+	/*
+	 * [controller]/add
+	 * [controller]/edit
+	 */
+	 	[id$="-add"] .panel-body {
+	 		margin-bottom: 50px;
+	 	}
+		.add-main-actions,
+		.edit-main-actions {
+			margin-bottom: 40px;
+		}
+		.add-actions,
+		.edit-actions,
+		.login-actions {
+			margin-top: 40px;
+		}
+
+	/*
+	 * [controller]/view
+	 */
+	 	[id$="-view"] .row {
+	 		margin-bottom: 20px;
+	 	}
+
+	/*
+	 * /displays
+	 */
+		#displays-add #map-container,
+		#displays-edit #map-container,
+		#displays-view #map-container {
+			overflow: hidden;
+			height: 250px;
+			background-color: #EEE;
+		}
+		#displays-add #map-container img,
+		#displays-edit #map-container img,
+		#displays-view #map-container img {
+			position: relative;
+			left: -40%;
+		}
+
+		/*
+		 * /displays/map
+		 */
+			#displays-map .references {
+				margin: 0 0 20px 0;
+			}
+
+	/*
+	 * /audits
+	 */
+		/*
+		 * /audits/index
+		 */
+			#audits-index .actions {
+				width: 50px;
+			}
+
+	/*
+	 * /users
+	 */
+		/*
+		 * /users/login
+		 */
+			#users-login form {
+				padding: 0;
+			}
+			#users-login form #g-recaptcha {
+				margin-top: 25px;
+			}
+			#users-login form #g-recaptcha-error {
+				display: none;
+				color: red;
+			}
+
+
+
+
+
+/*
+ * Core.css
+ */
+	#json-textarea,
+	.json-textarea {
+		width: 100%;
+		height: 300px;
+
+		resize: none;
+	}
+	
+	#FilterGroup {
+		display: none;
+	}
+
+
+
+
+
+/*
+ * Media Querys
+ */
+
+	/*
+	 * Media Query para fixear los márgenes de las opciones
+	 */
+	@media screen and (min-width: 992px) {
+
+		nav.navbar.navbar-default .navbar-collapse {
+			padding: 0;
+			border-bottom: 0;
+		}
+
+	}
+
+	/*
+	 * Media Query para que la nav haga el breakpoint en 991px y no 768px
+	 */
+	@media screen and (max-width: 991px) {
+
+		.navbar-header {
+			float: none;
+		}
+		.navbar-left,.navbar-right {
+			float: none !important;
+		}
+		.navbar-toggle {
+			display: block;
+		}
+		.navbar-collapse {
+			border-top: 1px solid transparent;
+			box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+		}
+		.navbar-fixed-top {
+			top: 0;
+			border-width: 0 0 1px;
+		}
+		.navbar-collapse.collapse {
+			display: none!important;
+		}
+		.navbar-nav {
+			float: none!important;
+			margin: 7.5px 0;
+		}
+		.navbar-nav > li {
+			float: none;
+		}
+		.navbar-nav > li > a {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			line-height: 30px;
+		}
+		.collapse.in {
+			display:block !important;
+		}
+
+	}
